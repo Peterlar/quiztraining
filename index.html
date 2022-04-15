@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <div class="container">
-          <div class="scoreBoard"><span class="score-num">0</span>/<span class="answered-num">0</span></div>
-          <form id="quiz_form">
-            <h1>Q: <span class="qus">This is a Quis?</span></h1>
-            <div class="all_options">
-            </div>
-            <div class="buttons">
-              <button type="submit">Submit</button>
-            </div>
-      
-          </form>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
         </div>
-      </section>
+    </div>
+    <div class="controls">
+        <button id="next button" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+
+    <div class="score">
+        <span id="right-answer"></span>
+    </div>
       
     <script src="script.js"></script>
 
